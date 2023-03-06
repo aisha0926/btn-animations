@@ -1,17 +1,9 @@
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-}
-
-a {
+a.swipe-top-bottom {
   text-decoration: none;
   color: black;
   padding: 30px 80px;
-  border: 3px solid white;
-  color: white;
+  border: 3px solid teal;
+  color: teal;
   font-family: sans-serif;
   font-size: 40px;
   position: relative;
@@ -19,7 +11,7 @@ a {
   transform: all 1s;
 }
 
-a::before {
+a.swipe-top-bottom::before {
   content: 'Yeah';
   position: absolute;
   top: -100%;
@@ -29,15 +21,15 @@ a::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  transition: all 1s;
+  background-color: teal;
+  transition: all 0.5s;
 }
 
-a:hover::before {
+a.swipe-top-bottom:hover::before {
   transform: translateY(100%);
 }
 
-a:hover {
-  border: 3px solid white;
+a.swipe-top-bottom:hover {
+  border: 3px solid teal;
   color: white;
 }

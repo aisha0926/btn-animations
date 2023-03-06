@@ -1,21 +1,15 @@
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
+a.rotating-btn {
   text-decoration: none;
   color: #000;
 
   border: 5px solid black;
-  padding: 20px 40px;
+  padding: 30px 70px;
   position: relative;
   overflow: hidden;
+  font-size: 40px;
 }
 
-a::before {
+a.rotating-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -29,6 +23,6 @@ a::before {
   transition: transform 0.5s;
 }
 
-a:hover::before {
+a.rotating-btn:hover::before {
   transform: rotate(0deg);
 }
